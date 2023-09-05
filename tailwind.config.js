@@ -20,7 +20,8 @@ module.exports = {
         extend:{
             fontFamily:{
                 tasa: ['var(--font-tasa)'],
-                tasaText: ['var(--font-tasa-text)']
+                tasaText: ['var(--font-tasa-text)'],
+                tasaDeck: ['var(--font-tasa-deck)'],
             },
             animation:{
                 'spin-slow': 'spin 3s linear infinite'

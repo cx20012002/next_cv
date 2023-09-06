@@ -13,7 +13,6 @@ function About() {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(Draggable, ScrollTrigger);
-
         const ctx = gsap.context(() => {
 
             // Drag Box
@@ -85,6 +84,8 @@ function About() {
                 }, "<")
 
         }, app)
+
+        ScrollTrigger.refresh();
 
         return () => ctx.revert();
 

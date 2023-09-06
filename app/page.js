@@ -79,6 +79,8 @@ export default function Home() {
             })
         }, app)
 
+        ScrollTrigger.refresh();
+
         return () => ctx.revert();
     }, [])
     return (

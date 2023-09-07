@@ -10,10 +10,10 @@ export default function Home() {
     const app = useRef();
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        //scroll to top on refresh
-        window.scrollTo(0, 0);
         const ctx = gsap.context(() => {
             const ul = document.querySelectorAll('.bg-anim ul');
+            // reset scroll position to top
+            window.scrollTo(0, 0);
             // Hero Banner Section
             gsap.timeline({
                 scrollTrigger: {
@@ -32,7 +32,7 @@ export default function Home() {
                 .to("header h2", {
                     y: -530,
                     duration: 2
-                }, "<")
+                }, "<");
 
             // Hero Banner Section - Background Animation
             gsap.timeline({repeat: -1, paused: false})

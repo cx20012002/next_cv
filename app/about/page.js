@@ -14,6 +14,8 @@ function About() {
     useLayoutEffect(() => {
         gsap.registerPlugin(Draggable, ScrollTrigger);
         const ctx = gsap.context(() => {
+            // reset scroll position to top
+            window.scrollTo(0, 0);
 
             // Drag Box
             Draggable.create(".drag-box", {

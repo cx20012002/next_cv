@@ -10,6 +10,8 @@ export default function Home() {
     const app = useRef();
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        //scroll to top on refresh
+        window.scrollTo(0, 0);
         const ctx = gsap.context(() => {
             const ul = document.querySelectorAll('.bg-anim ul');
             // Hero Banner Section
@@ -81,7 +83,9 @@ export default function Home() {
 
         ScrollTrigger.refresh();
 
-        return () => ctx.revert();
+        return () => {
+            ctx.revert();
+        }
     }, [])
     return (
         <div className={"relative bg-black font-tasa"} ref={app}>

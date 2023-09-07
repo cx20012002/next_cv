@@ -8,6 +8,10 @@ import profile_7 from "/public/images/7.webp";
 import profile_8 from "/public/images/8.webp";
 import profile_9 from "/public/images/9.webp";
 import profile_10 from "/public/images/10.webp";
+import profile_11 from "/public/images/1-1.webp";
+import profile_12 from "/public/images/12.webp";
+import profile_13 from "/public/images/13.webp";
+
 
 import p1 from "/public/images/p1.webp";
 import p2 from "/public/images/p2.webp";
@@ -29,9 +33,13 @@ import c8 from "/public/images/c8.svg";
 import c9 from "/public/images/c9.svg";
 import c10 from "/public/images/c10.svg";
 
-const profile = {profile_1, profile_2, profile_3, profile_4, profile_5, profile_6, profile_7, profile_8, profile_9, profile_10};
+import bored_image from "/public/images/bored_image.webp";
+
+const profile = {profile_1, profile_2, profile_3, profile_4, profile_5, profile_6, profile_7, profile_8, profile_9, profile_10, profile_11, profile_12, profile_13};
 const people = {p1, p2, p3, p4};
 
 const images = {img1, smile, quote_icon, avatar1, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10};
 
-export {profile, people, images};
+const works = {bored_image}
+
+export {profile, people, images, works};

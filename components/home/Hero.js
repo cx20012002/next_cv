@@ -49,7 +49,7 @@ function Hero() {
                         <h2 className={"font-black text-[320px]"}>AGENCY</h2>
                     </div>
                     <div
-                        className={"text-[32px] flex justify-between items-center md:w-[45%] w-full mt-10 whitespace-nowrap"}>
+                        className={"text-[32px] flex justify-between items-center md:w-[35%] w-full mt-10 whitespace-nowrap"}>
                         <div className={"w-3/12"}>C—B</div>
                         <div className={"w-6/12 text-[12px] text-center"}>
                             <div className={"sub_text_anim flex gap-2 overflow-hidden"}>

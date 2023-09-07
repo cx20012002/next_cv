@@ -2,6 +2,8 @@
 
 import {useLayoutEffect} from "react";
 import {gsap} from 'gsap';
+import Link from "next/link";
+import AnimatedButton from "@/components/AnimatedButton";
 
 function Footer() {
     useLayoutEffect(() => {
@@ -33,10 +35,9 @@ function Footer() {
                         ))}
                     </div>
                 </div>
-                <button
-                    className={"text-[20px] text-white px-16 py-8 border border-neutral-600 rounded-full uppercase mt-20"}>Start
-                    a project
-                </button>
+                <Link as={"/"} href={"/"}>
+                    <AnimatedButton text={"Start a Project"}/>
+                </Link>
                 <div className={"text-neutral-500 text-sm uppercase mt-20 text-center"}>
                     <ul className={"flex gap-10"}>
                         <li>Instagram</li>

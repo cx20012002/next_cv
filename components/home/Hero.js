@@ -30,7 +30,7 @@ function Hero() {
                     <div
                         className={"absolute top-0 w-[80%] h-24 flex justify-between items-center text-[11px] font-bold leading-3"}>
                         <div className={"text-left"}>
-                            <p>LOOKING FOR YOUR !!</p>
+                            <p>LOOKING FOR YOUR</p>
                             <p>NEXT DREAM TEMPLATE?</p>
                         </div>
                         <div className={"text-center"}>

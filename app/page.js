@@ -79,7 +79,6 @@ export default function Home() {
             })
         }, app)
 
-        console.log('new refresh')
         ScrollTrigger.refresh();
 
         return () => ctx.revert();

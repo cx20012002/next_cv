@@ -24,7 +24,8 @@ module.exports = {
                 tasaDeck: ['var(--font-tasa-deck)'],
             },
             animation:{
-                'spin-slow': 'spin 3s linear infinite'
+                'spin-slow': 'spin 3s linear infinite',
+                'spin-very-slow': 'spin 8s linear infinite'
             }
         }
     },

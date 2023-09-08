@@ -2,15 +2,15 @@
 
 import {useLayoutEffect, useRef} from "react";
 import Image from "next/image";
-import {works, profile, images} from "@/utils/images";
+import {works, profile} from "@/utils/images";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
+import Header from "@/components/Header";
 
-function page() {
+function Bored() {
     const app = useRef();
     useLayoutEffect(() => {
-
         gsap.registerPlugin(ScrollTrigger);
         const ctx = gsap.context(() => {
             gsap.to('.bored_image', {
@@ -37,7 +37,7 @@ function page() {
                         trigger: item,
                         start: 'top 50%',
                         end: 'bottom 20%',
-                        toggleActions: 'play reverse restart reverse',
+                        toggleActions: `play reverse restart reverse`,
                     }
                 })
             })
@@ -50,21 +50,8 @@ function page() {
 
     return (
         <div className={"w-full h-fit bg-white relative font-tasa z-10"} ref={app}>
-            <header className={"flex flex-col justify-center items-center"}>
-                <div className={"max-w-[1580px] w-full h-24 flex justify-between items-center text-[11px] font-bold leading-3 px-5"}>
-                    <div className={"text-left"}>
-                        <p>LOOKING FOR YOUR</p>
-                        <p>NEXT DREAM TEMPLATE?</p>
-                    </div>
-                    <div className={"text-center"}>
-                        <p>CUBO</p>
-                        <p>CREATIVE</p>
-                    </div>
-                    <div className={"text-right"}>
-                        <p>BUILT FOR</p>
-                        <p>IMPACT</p>
-                    </div>
-                </div>
+            <div className={"flex flex-col justify-center items-center"}>
+                <Header/>
 
                 <div className={"max-w-[1580px] w-full flex flex-col gap-y-7 pt-48 pb-28 px-5"}>
                     <h2 className={"text-6xl uppercase font-black"}>Bored</h2>
@@ -86,10 +73,9 @@ function page() {
                     </ul>
                     <button className={"text-left"}>View Project</button>
                 </div>
-            </header>
+            </div>
 
-            <div
-                className={`bg-green-200 w-full h-screen flex justify-center items-center sticky top-0 -z-10 overflow-hidden bored_image_wrap`}>
+            <div className={`bg-green-200 w-full h-screen flex justify-center items-center sticky top-0 -z-10 overflow-hidden bored_image_wrap`}>
                 <Image src={works.bored_image} fill alt={"bored image"} className={"bored_image object-cover"}/>
             </div>
             <div className={"w-full bg-white flex flex-col justify-center items-center"}>
@@ -109,11 +95,8 @@ function page() {
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     )
 }
 
-export default page;
+export default Bored;

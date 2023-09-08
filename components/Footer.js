@@ -35,7 +35,7 @@ function Footer() {
                         ))}
                     </div>
                 </div>
-                <Link as={"/"} href={"/"}>
+                <Link as={"/contact"} href={"/contact"}>
                     <AnimatedButton text={"Start a Project"}/>
                 </Link>
                 <div className={"text-neutral-500 text-sm uppercase mt-20 text-center"}>

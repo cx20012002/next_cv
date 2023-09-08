@@ -1,24 +1,12 @@
 import Image from "next/image";
 import {profile} from "@/utils/images";
+import Header from "@/components/Header";
 
 function AboutHeader() {
     return (
         <header className={"flex flex-col justify-center items-center overflow-hidden mb-52"}>
             {/* Header Menu */}
-            <div className={"w-[80%] h-24 flex justify-between items-center text-[11px] font-bold leading-3"}>
-                <div className={"text-left"}>
-                    <p>LOOKING FOR YOUR</p>
-                    <p>NEXT DREAM TEMPLATE?</p>
-                </div>
-                <div className={"text-center"}>
-                    <p>CUBO</p>
-                    <p>CREATIVE</p>
-                </div>
-                <div className={"text-right"}>
-                    <p>BUILT FOR</p>
-                    <p>IMPACT</p>
-                </div>
-            </div>
+            <Header/>
 
             {/* Header Center */}
             <div className={"leading-[210px] text-center mt-28 relative"}>

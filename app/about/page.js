@@ -1,7 +1,6 @@
 'use client'
 
-import Image from "next/image";
-import {profile, people, images} from "@/utils/images";
+import {people, images} from "@/utils/images";
 import {useLayoutEffect, useRef} from "react";
 import gsap from "gsap";
 import Draggable from "gsap/dist/Draggable";

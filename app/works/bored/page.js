@@ -75,7 +75,7 @@ function Bored() {
                 </div>
             </div>
 
-            <div className={`bg-green-200 w-full h-screen flex justify-center items-center sticky top-0 -z-10 overflow-hidden bored_image_wrap`}>
+            <div className={`w-full h-screen flex justify-center items-center sticky top-0 -z-10 overflow-hidden bored_image_wrap`}>
                 <Image src={works.bored_image} fill alt={"bored image"} className={"bored_image object-cover"}/>
             </div>
             <div className={"w-full bg-white flex flex-col justify-center items-center"}>
